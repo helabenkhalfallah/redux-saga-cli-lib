@@ -1,6 +1,8 @@
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
 
-const withRedux = (mapStateToProps, mapDispatchToprops, WrappedComponent) =>
-  connect(mapStateToProps, mapDispatchToprops)(WrappedComponent)
+const withRedux = (mapStateToProps, mapDispatchToprops, WrappedComponent) => connect(
+  mapStateToProps,
+  mapDispatchToprops,
+)(WrappedComponent);
 
-export default withRedux
+export default withRedux;

@@ -1,11 +1,7 @@
-import { combineReducers } from 'redux'
-import AppLogger from '../logger/AppLogger'
+import { combineReducers } from 'redux';
 
-const AppReduxReducers = (reducers) => {
-  AppLogger.info('AppReduxReducers reducers : ', reducers)
-  return combineReducers({
-    ...reducers,
-  })
-}
+const AppReduxReducers = reducers => combineReducers({
+  ...reducers,
+});
 
-export default AppReduxReducers
+export default AppReduxReducers;
